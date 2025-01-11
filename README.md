@@ -6,8 +6,10 @@
 * Для проверки корректности настройки, разорвите один из кабелей между одним из маршрутизаторов и Switch0 и запустите ping между PC0 и Server0.
 * На проверку отправьте получившуюся схему в формате pkt и скриншот, где виден процесс настройки маршрутизатора.
 ---------------------------------------------------------
-#### * *
-[файл pkt](https://github.com/DeluxWebSite/homework/blob/main/hsrp_advanced-2.pkt)
+
+#### [файл pkt](https://github.com/DeluxWebSite/homework/blob/main/hsrp_advanced-2.pkt)
+
+
 ![alt](https://github.com/DeluxWebSite/homework/blob/main/Снимок%20экрана%202025-01-11%20в%2011.10.45.png)
 ![alt](https://github.com/DeluxWebSite/homework/blob/main/Снимок%20экрана%202025-01-11%20в%2011.17.01.png)
 ![alt](https://github.com/DeluxWebSite/homework/blob/main/Снимок%20экрана%202025-01-11%20в%2011.17.43.png)
