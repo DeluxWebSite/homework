@@ -5,11 +5,9 @@
 * Настройте балансировку Round-robin на 4 уровне.
 * На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy.
 ---------------------------------------------------------
-
-#### [файл pkt](https://github.com/DeluxWebSite/homework/blob/main/hsrp_advanced-2.pkt)
-
-
-![alt]()
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Screenshot%20from%202025-01-13%2010-52-35.png)
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Screenshot%20from%202025-01-13%2010-53-51.png)
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Screenshot%20from%202025-01-13%2010-54-56.png)
 
 ---------------------------------------------------------
 ### Задание 2
@@ -20,4 +18,10 @@
 
 --------------------------------------------------------
 
-![alt]()
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Screenshot%20from%202025-01-13%2010-56-05.png)
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Screenshot%20from%202025-01-13%2010-57-34.png)
+
+
+#### [файл nginx.conf](https://github.com/DeluxWebSite/homework/blob/main/nginx.conf)
+
+#### [файл upstream.inc](https://github.com/DeluxWebSite/homework/blob/main/upstream.inc)
