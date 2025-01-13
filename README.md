@@ -5,7 +5,7 @@
 * Необходимо сделать так, чтобы rsync подсчитывал хэш-суммы для всех файлов, даже если их время модификации и размер идентичны в источнике и приемнике.
 * На проверку направить скриншот с командой и результатом ее выполнения
 ---------------------------------------------------------
-![alt]()
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Screenshot%20from%202025-01-13%2015-22-21.png)
 
 ---------------------------------------------------------
 ### Задание 2
@@ -17,6 +17,9 @@
 
 --------------------------------------------------------
 
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Screenshot%20from%202025-01-13%2015-42-42.png)
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Screenshot%20from%202025-01-13%2015-45-43.png)
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Screenshot%20from%202025-01-13%2015-46-14.png)
 
 
 
