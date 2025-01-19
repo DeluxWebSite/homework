@@ -32,4 +32,11 @@
 
 ---
 
-![alt]()
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Снимок%20экрана%202025-01-19%20в%2016.44.33.png)
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Снимок%20экрана%202025-01-19%20в%2016.44.47.png)
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Снимок%20экрана%202025-01-19%20в%2016.45.03.png)
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Снимок%20экрана%202025-01-19%20в%2016.51.19.png)
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Снимок%20экрана%202025-01-19%20в%2016.53.40.png)
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Снимок%20экрана%202025-01-19%20в%2016.53.52.png)
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Снимок%20экрана%202025-01-19%20в%2016.56.08.png)
+![alt](https://github.com/DeluxWebSite/homework/blob/main/Снимок%20экрана%202025-01-19%20в%2016.58.01.png)
