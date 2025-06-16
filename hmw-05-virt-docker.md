@@ -4,46 +4,49 @@
 
 Сценарий выполнения задачи:
 
-Установите docker и docker compose plugin на свою linux рабочую станцию или ВМ.
-Если dockerhub недоступен создайте файл /etc/docker/daemon.json с содержимым: {"registry-mirrors": ["https://mirror.gcr.io", "https://daocloud.io", "https://c.163.com/", "https://registry.docker-cn.com"]}
-Зарегистрируйтесь и создайте публичный репозиторий с именем "custom-nginx" на https://hub.docker.com (ТОЛЬКО ЕСЛИ У ВАС ЕСТЬ ДОСТУП);
-скачайте образ nginx:1.21.1;
-Создайте Dockerfile и реализуйте в нем замену дефолтной индекс-страницы(/usr/share/nginx/html/index.html), на файл index.html с содержимым:
+- Установите docker и docker compose plugin на свою linux рабочую станцию или ВМ.
+- Если dockerhub недоступен создайте файл /etc/docker/daemon.json с содержимым: {"registry-mirrors": ["https://mirror.gcr.io", "https://daocloud.io", "https://c.163.com/", "https://registry.docker-cn.com"]}
+- Зарегистрируйтесь и создайте публичный репозиторий с именем "custom-nginx" на https://hub.docker.com (ТОЛЬКО ЕСЛИ У ВАС ЕСТЬ ДОСТУП);
+- скачайте образ nginx:1.21.1;
+- Создайте Dockerfile и реализуйте в нем замену дефолтной индекс-страницы(/usr/share/nginx/html/index.html), на файл index.html с содержимым:
 
-<html>
+\*<html>
+
 <head>
 Hey, Netology
 </head>
 <body>
 <h1>I will be DevOps Engineer!</h1>
 </body>
-</html>
-Соберите и отправьте созданный образ в свой dockerhub-репозитории c tag 1.0.0 (ТОЛЬКО ЕСЛИ ЕСТЬ ДОСТУП).
-Предоставьте ответ в виде ссылки на https://hub.docker.com/<username_repo>/custom-nginx/general .
+</html>*
+- Соберите и отправьте созданный образ в свой dockerhub-репозитории c tag 1.0.0 (ТОЛЬКО ЕСЛИ ЕСТЬ ДОСТУП).
+- Предоставьте ответ в виде ссылки на https://hub.docker.com/<username_repo>/custom-nginx/general .
 
 ---
 
-Установил Docker:
+- Установил Docker:
 
-sudo apt-get update;
-sudo apt install git curl;
-curl -fsSL get .docker.com -o get -docker.sh;
-chmod +x get-docker.sh;
-./get-docker.sh
-docker pull hello-world;
-docker run hello-world
-Установил Docker compose:
+- sudo apt-get update;
+- sudo apt install git curl;
+- curl -fsSL get .docker.com -o get -docker.sh;
+- chmod +x get-docker.sh;
+- ./get-docker.sh
+- docker pull hello-world;
+- docker run hello-world
 
-curl -L https://github.com/docker/compose/releases/download/v2.5.1/docker compose-uname -s-uname -m -o /usr/bin/docker-compose;
-chmod +x /usr/bin/docker-compose
-docker-compose version
-Зарегистрировался на https://hub.docker.com
-Скачал образ nginx:1.21.1
-docker pull nginx:1.21.1
-Создал Docerfile с заменой дефолтной индекс-страницы согласно задания FROM nginx:1.21.1 COPY ./index.html /usr/share/nginx/html/index.html EXPOSE 80
-Собрал докер образ: dokcer build -t custom-nginx:1.0.0 .
-Собрал и отправил созданный образ в свой dockerhub-репозиторий docker tag custom-nginx:1.0.0 sergeymeljnick78/custom-nginx:1.0.0 docker push sergeymeljnick78/custom-nginx:1.0.0
-Ссылка в dockerhub-репозиторий:[ https://hub.docker.com/repository/docker/kargapoltcevks/custom-nginx/general](https://hub.docker.com/repository/docker/sergeymeljnick78/custom-nginx/general)
+- Установил Docker compose:
+
+- curl -L https://github.com/docker/compose/releases/download/v2.5.1/docker compose-uname -s-uname -m -o /usr/bin/docker-compose;
+- chmod +x /usr/bin/docker-compose
+- docker-compose version
+
+- Зарегистрировался на https://hub.docker.com
+- Скачал образ nginx:1.21.1
+- docker pull nginx:1.21.1
+- Создал Docerfile с заменой дефолтной индекс-страницы согласно задания FROM nginx:1.21.1 COPY ./index.html /usr/share/nginx/html/index.html EXPOSE 80
+- Собрал докер образ: dokcer build -t custom-nginx:1.0.0 .
+- Собрал и отправил созданный образ в свой dockerhub-репозиторий docker tag custom-nginx:1.0.0 sergeymeljnick78/custom-nginx:1.0.0 docker push sergeymeljnick78/custom-nginx:1.0.0
+  Ссылка в dockerhub-репозиторий:[ https://hub.docker.com/repository/docker/sergeymeljnick78/custom-nginx/general](https://hub.docker.com/repository/docker/sergeymeljnick78/custom-nginx/general)
 
 ---
 
@@ -64,7 +67,7 @@ docker pull nginx:1.21.1
 - Переименовываю контейнер docker rename msv-custom-nginx-t2 custom-nginx-t2
 - Выполняю команду date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080 ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html
 
-  ![alt text](https://github.com/DeluxWebSite/homework/blob/main/Снимок-экрана-от-2025-06-16 11-46-59.png)
+  ![alt text](https://github.com/DeluxWebSite/homework/blob/main/Снимок-экрана-от-2025-06-16-11-46-59.png)
 
 ---
 
@@ -146,7 +149,7 @@ docker pull nginx:1.21.1
 - Подключился к контейнеру debian и вывел файлы содержащиеся в директории /data
 
 ![alt text](https://github.com/DeluxWebSite/homework/blob/main/Снимок-экрана-от-2025-06-16-14-35-14.png)
-![alt text](https://github.com/DeluxWebSite/homework/blob/main/Снимок-экрана-от-2025-06-16 14-37-29.png)
+![alt text](https://github.com/DeluxWebSite/homework/blob/main/Снимок-экрана-от-2025-06-16-14-37-29.png)
 ![alt text](https://github.com/DeluxWebSite/homework/blob/main/Снимок-экрана-от-2025-06-16-14-39-10.png)
 
 ---
